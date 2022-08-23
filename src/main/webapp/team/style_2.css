@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+
+/* 이미지 + summary */
+#sub-top01{
+	width: calc(86.96% - 0px); height: 212px; left: 40px;
+	right: 0; margin: 190px auto 0; overflow: hidden;
+	position: inherit;
+}
+
+#sub-top01>.sub-img{
+	width: 100%; height: 100%; background: url(http://xn--910bp71dtzb.com/img/sub-top.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#sub-toptxt{
+	position: relative; font-size: 44px; font-weight: 500; top: -136px; left: 0; right: 0; margin: auto;
+	color: #fff; text-align: center; z-index: 0; animation: sub_top 0.8s 0.2s both;
+}
+
+#sub-topline{
+	position: absolute; top: 52px; width: 100%; height: 1px;
+	background-color: #fff; animation: sub_top_line 1.2s 0.2s both;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* 가운데~ */
+.all_wrap{ width: calc(100% - 0px); height: auto; overflow: hidden; }
+
+#sub_container{ width: 1100px; position: relative; left: 50%; margin-left: -510px; margin-bottom: 100px; }
+
+/* 홈 summary 사업개요 위치 */
+#snb_wrap{
+	width: 496px; height: auto; position: absolute;
+	top: -130px; right: 0;
+}
+
+
+#snb{ width: 1100px; margin: 0 auto 45px; position: relative; margin-top: 60px; }
+
+#snb>li { float: left; position: relative; }
+
+/* 홈 아이콘 */
+.home{ margin-top: 12px; margin-right: 20px; }
+
+/* 홈 아이콘 옆에 줄 */
+.snb-line{ width: 1px; height: 20px; background-color: #aaa; margin-top: 15px; margin-right: 10px; }
+
+/* 홈 아이콘 옆 summary 사업개요 */
+#snb .ov > a {
+	display: block; height: 48px; line-height: 48px; padding: 0 45px 0 15px;
+	font-size: 14px; color: #555; min-width: 160px; font-weight: 600; text-decoration: none;
+}
+
+#snb .ov ul { visibility: hidden; }
+
+/* 홈 아이콘 하위메뉴 */
+#snb .ov ul li{
+	border: 1px solid #ddd; font-weight: 600; 
+	background: #fff; position: relative; left: -20px; width: 205px;
+}
+
+
+#snb .ov ul li a{
+	display: block; font-size: 11.5px; color: #999; padding: 17px 15px;
+	white-space: nowrap; text-decoration: none;
+}
+
+/* summary 옆 > */
+#snb > li:first-child + li + li > a{
+	background: url(http://xn--910bp71dtzb.com/img/common/snb-arr.gif) no-repeat 100% 50%;
+}
+
+/* 사업개요 옆 ∨ */
+#snb > li:first-child + li + li + li > a{
+	background: url(http://xn--910bp71dtzb.com/img/common/snb-arr2.gif) no-repeat 100% 50%;
+	margin-top: 1px;
+}
+
+
+/* 사업개요~ */
+#sub_tit{ width: 1100px; position: relative; margin-top: 100px; margin-bottom: 50px; }
+
+.sub_line{
+	width: 100%; height: 1px; background-color: #ccc; margin-top: 21px; margin-bottom: 21px;
+}
+
+.sub_tit2 { font-size: 14px; color: #888; letter-spacing: -2px; }
+.sub_tit2 > span{ color: #333; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
