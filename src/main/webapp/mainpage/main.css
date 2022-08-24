@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.section s4 {
+	background-image: url("http://xn--910bp71dtzb.com/img/sec05-bg.jpg");
+	
+}
+
+.section s1 > h1 {
+	color: white;
+}
