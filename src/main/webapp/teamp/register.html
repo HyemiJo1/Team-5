@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="../css/table.css">
+<link rel="stylesheet" type="text/css" href="../css/snb.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
@@ -13,8 +14,15 @@ $(document).ready(function() {
 	
 	$(".sub-footer").load("footer.html");
 	$(".main").load("same.html");
+	$(".jungbo").load("jungbo.html")
 })
 
+window.onload = function() {
+	
+	btnOk.addEventListener("click", function() {
+		alert("확인버튼 클릭됨")
+	})
+}
 </script>
 
 <style type="text/css">
@@ -25,7 +33,7 @@ $(document).ready(function() {
     left: 50%;
     margin-left: -510px;
     margin-bottom: 100px;
-    margin-top: 150px;
+    margin-top: 55px;
 }
 
 .sub-img {
@@ -60,9 +68,34 @@ overflow: hidden;
 <div class="sub-img"><img src="http://xn--910bp71dtzb.com/img/sub-top4.jpg">
 <div class="sub-toptext">REGISTER</div>
 </div>
+<div id="snb_wrap">
+			
+<ul id="snb">
+	<li class="home"><a href=""><img src="http://xn--910bp71dtzb.com/img/common/home.png" alt="HOME"></a></li>
+		<li class="snb-line"></li>
+		<li class="ov">
+		<a href="">REGISTER</a>						
+		<ul>
+			<li><a href="">SUMMARY</a></li> 
+			<li><a href="">COMPLEX</a></li>
+			<li><a href="">UNIT PLAN</a></li> 							
+			<li><a href="">PR ROOM</a></li>
+			<li><a href="">REGISTER</a></li>
+		</ul>		
+		</li>
+						
+			<li class="ov">
+				<a href="" >관심고객등록</a>
+		<ul>
+			<li><a href="">관심고객등록</a></li> 
+		</ul>
+			</li>
+</ul> 
+			
+</div>
 <div id="sub">
 <div class="sub-tit">
-	<h2>관심고객등록</h2>
+	<h1>관심고객등록</h1>
 	<hr>
 	<p>가장 바다다운 바다를 누리는 하이엔드 오션 부티크 - 파나크 오퍼레이티드 바이 소노</p>
 </div>
@@ -132,43 +165,13 @@ overflow: hidden;
 
 <div class="sub-infor">
 <h3>■ 개인정보 입력</h3>
-<table class="boardwrite_table" style="width: 100%; height: 150px; padding: 0px; margin: 5px;">
-	<colgroup>
-		<col style="width:10%">
-		<col style="">
-	</colgroup>	
-            		
-	<tr>
-		<th>이름</th>
-		<td><input type="text" name="wr_8" id="wr_8" required class="bowrite_in" style="width:20%;"></td>
-	</tr>			
-			
-	<tr>
-		<th>휴대전화</th>
-	<td>
-		<select name="hp1" id="hp1">
-		<option value="010">010
-		<option value="011">011
-		<option value="016">016
-		<option value="019">019
-		<option value="017">017
-		<option value="018">018
-		</select> -
-		<input type="text" name="hp2" id="hp2" class="bowrite_in " style="width:10%;" maxlength="4"> -
-		<input type="text" name="hp3" id="hp3" class="bowrite_in " style="width:10%;" maxlength="4">
-	</td>
-	</tr>
-	
-	<tr>
-	<th>주소</th>
-	<td><select name="mb_addr1" id="sido"></select>
-		<select name="mb_addr2" id="gugun"></select>
-		<select name="mb_addr3" id="dong"></select>
-			
-	</td>				
-	</tr>
-	
-</table>
+<div class="jungbo"></div>
+<br><br>
+
+<div class="button">
+<input type="button" value="등록하기" id="btnOk">
+<input type="button" value="취소">
+</div>
 
 </div>
 </div>
